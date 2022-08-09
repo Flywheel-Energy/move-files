@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: move file
-      uses: Flywheel-Energy/move-files-action@master
+      uses: Flywheel-Energy/move-files@master
       with:
         source: "tests/a.txt"
         target: "tests/files/a.txt"
