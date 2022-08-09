@@ -12,3 +12,5 @@ jobs:
         source: "tests/a.txt"
         target: "tests/files/"
         flags: "-v"
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.0.1
