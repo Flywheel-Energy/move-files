@@ -10,5 +10,5 @@ jobs:
       uses: Flywheel-Energy/move-files@master
       with:
         source: "tests/a.txt"
-        target: "tests/files/a.txt"
+        target: "tests/files/"
         flags: "-v"
