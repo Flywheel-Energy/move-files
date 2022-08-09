@@ -1,6 +1,6 @@
 ## Usage
 
-copy files and artifacts via SSH as below.
+move files and artifacts via SSH as below.
 
 ```yaml
 name: move files
