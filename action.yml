@@ -1,0 +1,24 @@
+name: 'Move file'
+description: 'Move local files'
+author: 'Nicholas Smith'
+inputs:
+  flags:
+    description: 'Flags to use on the mv command. See "man mv" or "mv --help" for more details'
+    required: false
+    default: ''
+  source:
+    description: 'Source dir'
+    required: true
+  target:
+    description: 'Target dir'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args: 
+    - ${{inputs.flags}}
+    - ${{inputs.source}}
+    - ${{inputs.target}}
+branding:
+  icon: 'move'
+  color: 'blue'
